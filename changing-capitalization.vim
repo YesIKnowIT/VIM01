@@ -1,9 +1,11 @@
-#!/bin/sh
-FNAME=changing-capitalization
+#!/bin/bash
 
-vim $FNAME.orig << .
+vim - < changing-capitalization.orig 2<< '.'
 ~
 :$norm gUU
-:w $FNAME.out
+:w! changing-capitalization.out
 :q!
 .
+
+vimdiff changing-capitalization.o*
+
