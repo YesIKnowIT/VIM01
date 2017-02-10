@@ -1,0 +1,11 @@
+Example from Yes, I Know IT / It's FOSS article
+https://itsfoss.com/?p=14419
+
+Each example come with the original text (.orig) and a Bash 
+script (.sh) invoking Vim with the command illustrated in
+the article.
+
+After processing, the script launches `vimdiff` to compare
+before/after files.
+
+You can quit vimdiff using `:qa!`
